@@ -54,6 +54,16 @@
 .opções{
     display: none;
 }
+.container__texto{display:none;}
+
+.container__botao:checked ~ .container__rotulo > .cabecalho__menu-hamburger{
+    background-image: url(/imagem/Menu\ Aberto.svg);
+}
+
+.container__botao:checked ~ .container__rotulo{
+    background: var(--cor-azul-degrade);
+}
+
 
 @media screen and (min-width: 1024px){
 .container__titulo, .container__titulo—negrito{
@@ -83,5 +93,36 @@
 
 .opções__botão{display:none;}
 
+}
 
+.opções__botão:checked ~ .opcoes__rotulo > .opções__item{
+    background: var(--cor-azul-degrade);
+    color: var(--cor-branco);
+}
+
+.opções__item{
+    padding: 2em 1em;
+}
+.lista-menu__item:hover{
+    background-color: var(--cor-azul-degrade);
+}
+
+.lista-menu__item:hover>.lista-menu__link{
+    -webkit-text-fill-color: var(--cor-branco);
+    text-decoration: none;
+    
+}
+
+@media screen and (min-width:1728px){
+.container__link{
+    display:flex;
+    align-items:center;
+    text-decoration: none;
+    color: var(--cor-preto);
+}
+.cabeçalho{
+    padding: 0 2em;
+}
+.opções{margin-right:auto;}
+.container__texto{display:block;}
 }

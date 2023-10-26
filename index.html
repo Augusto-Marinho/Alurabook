@@ -18,7 +18,7 @@
     <header class="cabecalho">
     <div class="container">
     <input type="checkbox" id="menu" class="container__botao">
-    <label for="menu">
+    <label for="menu" class="container__rotulo">
        <span class="cabecalho__menu-hamburger cabecalho__imagem"></span>
     </label>
     <ul class="lista-menu">
@@ -37,7 +37,7 @@
 
     <input type="checkbox" id="opções__menu" class="opções__botão">
 
-    <label for="opções__menu">
+    <label for="opções__menu" class="opcoes__rotulo">
     <li class="opções__item">Categorias</li>
     </label>
     <ul class="lista-menu">
@@ -53,9 +53,20 @@
     </ul>
 
     <div class="container">
-        <a href="#"> <img src="imagem/Favoritos.svg" class="cabecalho__imagem container__imagenm-transparente" alt="Meus Favoritos"></a>
-        <a href="#"><img src="imagem/Compras.svg" class="cabecalho__imagem" alt="Carrinho de Compras"></a>
-        <a href="#"><img src="imagem/Usuario.svg" class="cabecalho__imagem" alt="Meu Perfil"></a>
+        <a href="#">
+             <img src="imagem/Favoritos.svg" class="cabecalho__imagem container__imagenm-transparente" alt="Meus Favoritos">
+        </a>
+
+        <a href="#" class="container__link">
+            <img src="imagem/Compras.svg" class="cabecalho__imagem" alt="Carrinho de Compras">
+            <p class="container__texto">Minha Sacola</p>
+        </a>
+
+        <a href="#" class="container__link">
+            <img src="imagem/Usuario.svg" class="cabecalho__imagem" alt="Meu Perfil">
+            <p class="container__texto">Meu perfil</p>
+        </a>
+
     </div>
     </header>
 
@@ -69,6 +80,7 @@
         <h2 class="carrossel__titulo">ÚLTIMOS LANÇAMENTOS</h2>
         
         <!-- Slider main container -->
+    <div class="carrossel__container">
     <div class="swiper">
     <!-- Additional required wrapper -->
     <!-- If we need pagination -->
@@ -117,7 +129,7 @@
 
 <section class="carrossel">
     <h2 class="carrossel__titulo">MAIS VENDIDOS</h2>
-
+    <div class="carrossel__container">
     <!-- Slider main container -->
     <div class="swiper">
         <!-- Additional required wrapper -->
@@ -161,6 +173,7 @@
             <a href="#" class="botões__ancora">Saiba mais</a>
         </div>
     </div>
+</div>
 </section>
 
 <section class="tópicos">
@@ -216,7 +229,7 @@
     <li class="lista-rodapé__item"><img src="imagem/PM3.svg" alt= "Logo PM3"><a href=”#” class="lista-rodapé__link">PM3</a></li>
 </ul>
 
-<ul class=”lista-rodapé>
+<ul class="lista-rodapé">
     <li class="lista-rodapé__titulo">COMUNIDADE</li>
     <li class="lista-rodapé__item"><img src="imagem/HipstersTech.svg" alt= "Logo Hipsters ponto Tech"><a href=”#” class="lista-rodapé__link">Hipsters ponto Tech</a></li>
     <li class="lista-rodapé__item"><img src="imagem/ScubaDev.svg" alt= "Logo Scuba Dev"><a href=”#” class="lista-rodapé__link">Scuba Dev</a></li>
